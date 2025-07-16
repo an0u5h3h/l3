@@ -1,108 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>first bootstrap project</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <!--Bootstrap4 CDN -->
-    
-         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-         <!--Use this for Carousel-->
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-         <!--USe this for lightbox-->
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top"> 
-            <a class="navbar-brand" href="#"><img class="img-fluid" src="assets/1.png" width="30" height="30"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon" ></span>
-            </button>
-            <div class="collapse navbar-collapse" id="#collapsibleNavbar">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"> 
-                        <a class="nav-link">Who</a>
-                    </li>
-                    <li class="nav-item"> 
-                        <a class="nav-link">What</a>
-                    </li>
-                    <li class="nav-item"> 
-                        <a class="nav-link">Where</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!--image carousel-->
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <ul class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0"></li>
-                <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ul>
-            <!--slide show-->
-            <div class="carousel-inner">
-                <div class="carousel-item">
-                    <img src="assets/6.jpg" alt="quote">
-                </div>
-                <div class="carousel-item active">
-                    <img src="assets/7.jpg" alt="quote">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/8.jpg" alt="quote">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-        </div>
-        <div id="gallery-lightbox" class="row">
-            <div class="col-md-3 col-ig-4">
-                <img class="w-100" src="assets/6.jpg" alt="image"data-target="#carousel" data-slide-to="0">
-            </div>
-            <div class="col-md-3 col-ig-4">
-                <img class="w-100" src="assets/7.jpg" alt="image" data-target="#carousel" data-slide-to="1">
-            </div>
-            <div class="col-md-3 col-ig-4">
-                <img class="w-100" src="assets/8.jpg" alt="image"data-target="#carousel" data-slide-to="2">
-            </div>
-            <div class="col-md-3 col-ig-4">
-                <img class="w-100" src="assets/5.jpg" alt="image"data-target="#carousel" data-slide-to="3">
-            </div>
-        </div>
-        <div class="modal" id="modal">
-            <div class="modal-dialog">
-                <div class="modal-content bg-transparent">
-                    <div id="carousel" class="carousel-slide" data-ride="false">
-                        <div class="carousel-item">
-                            <img class="w-100" src="assets/6.jpg" alt="firstSlide">
-                        </div>
-                        <div class="carousel-item active">
-                            <img class="w-100" src="assets/7.jpg" alt="firstSlide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="w-100" src="assets/8.jpg" alt="firstSlide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="w-100" src="assets/5.jpg" alt="firstSlide">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carousel" data-slide="prev">
-                <span class="carousel-control-prev-icon" aira-hidden="true"></span>
-            </a>
-            <a class="carousel-control-next" href="#carousel" data-slide="next">
-                <span class="carousel-control-next-icon" aira-hidden="true"></span>
-            </a>
-                </div>
-            </div>
-        </div>
-        
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <title>A Business Proposal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1><em>A Business Proposal</em></h1>
+
+  <div class="carousel">
+    <div class="slides">
+      <img src="assets/scene1.jpeg" alt="K-Drama Scene 1">
+      <img src="assets/scene2.jpeg" alt="K-Drama Scene 2">
+      <img src="assets/scene3.jpeg" alt="K-Drama Scene 3">
+      <img src="assets/scene4.jpeg" alt="K-Drama Scene 4">
+    </div>
+    <div class="nav">
+      <button id="prev">&#10094;</button>
+      <button id="next">&#10095;</button>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="section">
+      <h2>About the K-Drama</h2>
+      <p>
+        <em>A Business Proposal</em> is a 12‑episode romantic comedy about Shin Ha‑ri, a food researcher who goes on a blind date to help her friend — only to discover her date is her CEO, Kang Tae‑moo. Pretending for six weeks while hiding her identity, she navigates office antics, family drama, and fake engagements that unexpectedly spark real feelings.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Main Characters</h2>
+      <div class="character">
+        <b>Kang Tae‑moo (Ahn Hyo‑seop):</b> The Harvard‑educated CEO with a stone‑face exterior that hides warmth and comedic charm.
+      </div>
+      <div class="character">
+        <b>Shin Ha‑ri (Kim Se‑jeong):</b> An energetic, determined food researcher — her comedic timing and honesty make her irresistible.
+      </div>
+      <div class="character">
+        <b>Jin Young‑seo (Seol In‑ah):</b> The pampered heiress whose bond with Ha‑ri shows the power of sisterhood.
+      </div>
+      <div class="character">
+        <b>Cha Sung‑hoon (Kim Min‑kyu):</b> Tae‑moo’s loyal secretary who finds his own sweet romance.
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Why I Loved It</h2>
+      <ul>
+        <li>There were loads of comedic bits to this kdrama!.</li>
+        <li>Both of the relationships during the kdrama was .</li>
+        <li>Genuine emotional moments and satisfying arcs.</li>
+        <li>Strong female friendship — a core highlight!</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    const slides = document.querySelector('.slides');
+    const total = slides.children.length;
+    let index = 0;
+
+    document.getElementById('prev').onclick = () => {
+      index = (index - 1 + total) % total;
+      slides.style.transform = `translateX(${-index * 100}%)`;
+    };
+    document.getElementById('next').onclick = () => {
+      index = (index + 1) % total;
+      slides.style.transform = `translateX(${-index * 100}%)`;
+    };
+  </script>
+
+</body>
 </html>
